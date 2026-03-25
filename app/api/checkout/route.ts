@@ -23,8 +23,8 @@ export async function POST(req: Request) {
         },
       ],
       // Redirect back to dashboard after payment
-      success_url: `http://localhost:3000/dashboard?success=true`,
-      cancel_url: `http://localhost:3000/dashboard?canceled=true`,
+      success_url: `https://digital-heroes-golf-platform-chi.vercel.app/dashboard?success=true`,
+      cancel_url: `https://digital-heroes-golf-platform-chi.vercel.app/dashboard?canceled=true`,
     });
 
     return NextResponse.json({ url: session.url });
